@@ -155,10 +155,11 @@ const About = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center'>
               <div className='md:col-span-1'>
                 <div className='aspect-square rounded-2xl overflow-hidden shadow-xl'>
+                  {/* the photo looks small in on website change the image size */}
                   <img
                     src={founderImage}
                     alt='Suraksha Jadhav, Founder of Trimurtione Data and Engineering Services'
-                    className='w-full h-full object-cover'
+                    className='w-full h-full object-cover lg:w-80 lg:h-80'
                   />
                 </div>
               </div>

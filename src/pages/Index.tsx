@@ -10,7 +10,8 @@ const Index = () => {
     {
       icon: Database,
       title: 'Field Survey Projects',
-      description: 'Comprehensive CSR, agriculture, insurance, and health surveys with precision data collection across India.'
+      description:
+        'CLS (Crop loss Survey), Research and Development Health and Wealth projects Women Empowerment studies Agricultural and Crop Cutting Experiments (CCE) CSR (Corporate Social Responsibility) baseline and impact assessment surveys'
     },
     // {
     //   icon: TrendingUp,
@@ -28,7 +29,7 @@ const Index = () => {
     {
       icon: Target,
       title: 'Proven Experience',
-      description: '10+ successful CSR projects and 2000+ field surveys completed nationwide.'
+      description: '10+ successful CSR projects and 3,00,000+ field surveys completed nationwide.'
     },
     {
       icon: Shield,

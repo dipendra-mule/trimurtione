@@ -1,43 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
-import { FileText, Zap, MapPin, Sun, Calculator, Sprout, HeartPulse, Users, Wheat, Globe2, FlaskConicalIcon } from 'lucide-react';
 import fieldImage from '@/assets/field-survey-team.png';
+import { Value } from '@radix-ui/react-select';
+import { Calculator, FileText, MapPin, Sun, Zap } from 'lucide-react';
 
 const Services = () => {
-  const values = [
-    {
-      icon: Sprout, // you can replace with a relevant icon like Leaf or Tree if Sprout isn’t available
-      title: 'Crop Loss Survey (CLS)',
-      description: 'Accurate field surveys to assess and validate crop loss for insurance and government programs.'
-    },
-    {
-      icon: FlaskConicalIcon, // or use Beaker / Microscope
-      title: 'Research and Development',
-      description: 'Supporting data-driven research initiatives through structured field data collection and analysis.'
-    },
-    {
-      icon: HeartPulse, // or Heart if you prefer simpler
-      title: 'Health and Wealth Projects',
-      description: 'Gathering critical insights for programs focused on community health and financial well-being.'
-    },
-    {
-      icon: Users, // or UserCheck
-      title: 'Women Empowerment Studies',
-      description: 'Surveying and analyzing data to measure impact and participation in women-centric initiatives.'
-    },
-    {
-      icon: Wheat, // or Leaf / BarChart3
-      title: 'Agricultural and Crop Cutting Experiments (CCE)',
-      description: 'Field-level experiments and data collection to support accurate yield estimation and analysis.'
-    },
-    {
-      icon: Globe2, // or Building2
-      title: 'CSR (Corporate Social Responsibility) Surveys',
-      description: 'Conducting baseline and impact assessment surveys to measure CSR project effectiveness.'
-    }
-  ];
-
   const fieldSurveyServices = [
     'CSR and social impact surveys',
     'Agriculture and PMFBY crop cutting experiments',
@@ -165,26 +133,7 @@ const Services = () => {
           <hr className='my-16 border-muted' />
 
           {/* Core Values */}
-          <div>
-            <h2 className='text-3xl md:text-4xl font-bold text-center mb-14'>Our Core Values</h2>
-
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
-              {values.map((value, index) => {
-                const Icon = value.icon;
-                return (
-                  <div
-                    key={index}
-                    className='p-8 rounded-2xl bg-card shadow-sm hover:shadow-lg transition-all text-center border border-border'>
-                    <div className='w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5'>
-                      <Icon className='h-8 w-8 text-primary' />
-                    </div>
-                    <h3 className='text-xl font-semibold mb-3'>{value.title}</h3>
-                    <p className='text-muted-foreground text-sm leading-relaxed'>{value.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <Value />
         </div>
       </section>
 
