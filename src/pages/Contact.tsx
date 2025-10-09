@@ -101,9 +101,10 @@ const Contact = () => {
                   <div>
                     <h3 className='font-semibold mb-1'>Email</h3>
                     <a
-                      href='mailto:trimurtionedataandengineeringservices@gmail.com'
+                      href='mailto:
+trimurtionedataandengg.services@gmail.com'
                       className='text-muted-foreground hover:text-primary transition-colors'>
-                      trimurtionedataandengineeringservices@gmail.com
+                      trimurtionedataandengg.services@gmail.com
                     </a>
                   </div>
                 </div>

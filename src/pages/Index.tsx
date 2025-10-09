@@ -12,11 +12,11 @@ const Index = () => {
       title: 'Field Survey Projects',
       description: 'Comprehensive CSR, agriculture, insurance, and health surveys with precision data collection across India.'
     },
-    {
-      icon: TrendingUp,
-      title: 'Data & Reporting Services',
-      description: 'Advanced data cleaning, GIS mapping, interactive dashboards, and actionable analytics for informed decisions.'
-    },
+    // {
+    //   icon: TrendingUp,
+    //   title: 'Data & Reporting Services',
+    //   description: 'Advanced data cleaning, GIS mapping, interactive dashboards, and actionable analytics for informed decisions.'
+    // },
     {
       icon: Zap,
       title: 'Electrical Engineering',
@@ -103,7 +103,7 @@ const Index = () => {
             <p className='text-lg text-muted-foreground max-w-2xl mx-auto fade-in'>Comprehensive solutions from field to finish</p>
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 align-middle'>
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
