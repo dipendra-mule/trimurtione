@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
 import { Sprout, FlaskConicalIcon, HeartPulse, Users, Wheat, Globe2 } from 'lucide-react';
 
-const ServicesSection = () => {
+const ValuesSection = () => {
   const values = [
     {
       icon: Sprout,
@@ -70,5 +68,5 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default ValuesSection;
 

@@ -1,9 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
 import CTASection from '@/components/CTASection';
 import fieldImage from '@/assets/field-survey-team.png';
-import { Value } from '@radix-ui/react-select';
 import { Calculator, FileText, MapPin, Sun, Zap } from 'lucide-react';
+import ValuesSection from '@/components/ValuesSection';
 
 const Services = () => {
   const fieldSurveyServices = [
@@ -45,7 +46,7 @@ const Services = () => {
       </section>
 
       {/* Services Overview */}
-      <section className='py-24 bg-background text-foreground'>
+      <section className='section-padding bg-background text-foreground'>
         <div className='container-custom'>
           {/* Header */}
           <div className='text-center mb-20'>
@@ -133,7 +134,7 @@ const Services = () => {
           <hr className='my-16 border-muted' />
 
           {/* Core Values */}
-          <Value />
+          <ValuesSection />
         </div>
       </section>
 
@@ -150,7 +151,7 @@ const Services = () => {
               <div className='w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4'>
                 <Sun className='h-6 w-6 text-primary' />
               </div>
-              <h3 className='text-xl font-semibold mb-3'>10+ Successful Projects</h3>
+              <h3 className='text-xl font-semibold mb-3'>10+ Successful Projects with 2000+ Surveyers Team</h3>
               <p className='text-muted-foreground'>Proven track record in CSR surveys, agricultural data, and engineering solutions</p>
             </div>
 

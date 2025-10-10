@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import { CheckCircle, Database, Zap, Target, Shield, TrendingUp } from 'lucide-react';
 import heroImage from '@/assets/hero-two.png';
+import ValuesSection from '@/components/ValuesSection';
 
 const Index = () => {
   const services = [
@@ -29,7 +30,7 @@ const Index = () => {
     {
       icon: Target,
       title: 'Proven Experience',
-      description: '10+ successful CSR projects and 3,00,000+ field surveys completed nationwide.'
+      description: '10+ successful CSR projects, 2000+ surveyer team, and 10+ years of experience in field surveys.'
     },
     {
       icon: Shield,
@@ -72,7 +73,8 @@ const Index = () => {
               <Link to='/services' className='btn-primary'>
                 Explore Our Services
               </Link>
-              <Link to='/contact' className='btn-accent'>
+              {/* make this button width smaller on mobile */}
+              <Link to='/contact' className='btn-accent sm:'>
                 Contact Us Today
               </Link>
             </div>
@@ -132,6 +134,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <ValuesSection />
 
       {/* Why Choose Us */}
       <section className='section-padding bg-gradient-to-b from-muted/30 to-background'>
